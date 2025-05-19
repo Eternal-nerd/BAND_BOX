@@ -1,6 +1,2 @@
-build/
-out/
-.vs/
-bin/
-archive/
-testing/play_mp3_control/build
+application/build/
+testing/play_mp3_control/build/
