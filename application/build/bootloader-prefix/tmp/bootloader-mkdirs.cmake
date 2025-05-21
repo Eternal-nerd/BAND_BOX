@@ -3,20 +3,25 @@
 
 cmake_minimum_required(VERSION 3.5)
 
+# If CMAKE_DISABLE_SOURCE_CHANGES is set to true and the source directory is an
+# existing directory in our source tree, calling file(MAKE_DIRECTORY) on it
+# would cause a fatal error, even though it would be a no-op.
+if(NOT EXISTS "C:/Users/myles/esp/esp-idf/components/bootloader/subproject")
+  file(MAKE_DIRECTORY "C:/Users/myles/esp/esp-idf/components/bootloader/subproject")
+endif()
 file(MAKE_DIRECTORY
-  "/home/skinny/esp/esp-adf/esp-idf/components/bootloader/subproject"
-  "/home/skinny/Projects/BAND_BOX/application/build/bootloader"
-  "/home/skinny/Projects/BAND_BOX/application/build/bootloader-prefix"
-  "/home/skinny/Projects/BAND_BOX/application/build/bootloader-prefix/tmp"
-  "/home/skinny/Projects/BAND_BOX/application/build/bootloader-prefix/src/bootloader-stamp"
-  "/home/skinny/Projects/BAND_BOX/application/build/bootloader-prefix/src"
-  "/home/skinny/Projects/BAND_BOX/application/build/bootloader-prefix/src/bootloader-stamp"
+  "C:/Users/myles/Projects/BAND_BOX/application/build/bootloader"
+  "C:/Users/myles/Projects/BAND_BOX/application/build/bootloader-prefix"
+  "C:/Users/myles/Projects/BAND_BOX/application/build/bootloader-prefix/tmp"
+  "C:/Users/myles/Projects/BAND_BOX/application/build/bootloader-prefix/src/bootloader-stamp"
+  "C:/Users/myles/Projects/BAND_BOX/application/build/bootloader-prefix/src"
+  "C:/Users/myles/Projects/BAND_BOX/application/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/skinny/Projects/BAND_BOX/application/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "C:/Users/myles/Projects/BAND_BOX/application/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/skinny/Projects/BAND_BOX/application/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "C:/Users/myles/Projects/BAND_BOX/application/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

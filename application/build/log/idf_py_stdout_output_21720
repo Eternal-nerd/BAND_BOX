@@ -1,0 +1,85 @@
+[1/5] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\myles\Projects\BAND_BOX\application\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.4_py3.9_env\Scripts\python.exe C:/Users/myles/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/myles/Projects/BAND_BOX/application/build/partition_table/partition-table.bin C:/Users/myles/Projects/BAND_BOX/application/build/BAND_BOX.bin"
+BAND_BOX.bin binary size 0xd2030 bytes. Smallest app partition is 0x100000 bytes. 0x2dfd0 bytes (18%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\myles\Projects\BAND_BOX\application\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.4_py3.9_env\Scripts\python.exe C:/Users/myles/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/myles/Projects/BAND_BOX/application/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6560 bytes. 0xaa0 bytes (9%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\myles\esp\esp-idf\components\esptool_py && C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Users/myles/esp/esp-idf -D SERIAL_TOOL=C:/Espressif/python_env/idf5.4_py3.9_env/Scripts/python.exe;;C:/Users/myles/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/myles/Projects/BAND_BOX/application/build -P C:/Users/myles/esp/esp-idf/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 bootloader/bootloader.bin 0x10000 BAND_BOX.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port COM3
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 34:5f:45:c3:7f:20
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Auto-detected Flash size: 8MB
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000e2fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash params set to 0x0230
+SHA digest in image updated
+Compressed 25952 bytes to 16369...
+Writing at 0x00001000... (100 %)
+Wrote 25952 bytes (16369 compressed) at 0x00001000 in 0.7 seconds (effective 290.6 kbit/s)...
+Hash of data verified.
+Compressed 860208 bytes to 694645...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001cace... (4 %)
+Writing at 0x00020be7... (6 %)
+Writing at 0x00024d0b... (9 %)
+Writing at 0x00028e8a... (11 %)
+Writing at 0x0002d1fc... (13 %)
+Writing at 0x000312b6... (16 %)
+Writing at 0x0003535d... (18 %)
+Writing at 0x000393f8... (20 %)
+Writing at 0x0003d4ae... (23 %)
+Writing at 0x0004154b... (25 %)
+Writing at 0x0004560e... (27 %)
+Writing at 0x000496e8... (30 %)
+Writing at 0x0004d7b8... (32 %)
+Writing at 0x0005195e... (34 %)
+Writing at 0x000559f1... (37 %)
+Writing at 0x00059a55... (39 %)
+Writing at 0x0005dab8... (41 %)
+Writing at 0x00061b22... (44 %)
+Writing at 0x00065b6c... (46 %)
+Writing at 0x00069bcd... (48 %)
+Writing at 0x0006dc40... (51 %)
+Writing at 0x00071cb8... (53 %)
+Writing at 0x00075d41... (55 %)
+Writing at 0x00079de1... (58 %)
+Writing at 0x0007de5e... (60 %)
+Writing at 0x00081ebf... (62 %)
+Writing at 0x00085fb1... (65 %)
+Writing at 0x0008a057... (67 %)
+Writing at 0x0008e0f7... (69 %)
+Writing at 0x000920f1... (72 %)
+Writing at 0x00097c6c... (74 %)
+Writing at 0x000a07c0... (76 %)
+Writing at 0x000a5f2d... (79 %)
+Writing at 0x000abfeb... (81 %)
+Writing at 0x000b1112... (83 %)
+Writing at 0x000b620d... (86 %)
+Writing at 0x000bc2cc... (88 %)
+Writing at 0x000c2793... (90 %)
+Writing at 0x000cc106... (93 %)
+Writing at 0x000d3785... (95 %)
+Writing at 0x000d95e5... (97 %)
+Writing at 0x000df955... (100 %)
+Wrote 860208 bytes (694645 compressed) at 0x00010000 in 16.2 seconds (effective 423.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 381.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

@@ -1,13 +1,13 @@
 # Target labels
  bootloader
 # Source files and their labels
-/home/skinny/Projects/BAND_BOX/application/build/CMakeFiles/bootloader
-/home/skinny/Projects/BAND_BOX/application/build/CMakeFiles/bootloader.rule
-/home/skinny/Projects/BAND_BOX/application/build/CMakeFiles/bootloader-complete.rule
-/home/skinny/Projects/BAND_BOX/application/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
-/home/skinny/Projects/BAND_BOX/application/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
-/home/skinny/Projects/BAND_BOX/application/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
-/home/skinny/Projects/BAND_BOX/application/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
-/home/skinny/Projects/BAND_BOX/application/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
-/home/skinny/Projects/BAND_BOX/application/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
-/home/skinny/Projects/BAND_BOX/application/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+C:/Users/myles/Projects/BAND_BOX/application/build/CMakeFiles/bootloader
+C:/Users/myles/Projects/BAND_BOX/application/build/CMakeFiles/bootloader.rule
+C:/Users/myles/Projects/BAND_BOX/application/build/CMakeFiles/bootloader-complete.rule
+C:/Users/myles/Projects/BAND_BOX/application/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+C:/Users/myles/Projects/BAND_BOX/application/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/Users/myles/Projects/BAND_BOX/application/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/Users/myles/Projects/BAND_BOX/application/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/Users/myles/Projects/BAND_BOX/application/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/Users/myles/Projects/BAND_BOX/application/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/Users/myles/Projects/BAND_BOX/application/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

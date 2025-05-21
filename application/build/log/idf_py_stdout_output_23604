@@ -1,0 +1,218 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (PO�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 20 2025 14:36:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 8MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=8eb78h (584568) map[0m
+[0;32mI (290) esp_image: segment 1: paddr=0009eba0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (290) esp_image: segment 2: paddr=0009ebc4 vaddr=3ffb0000 size=01454h (  5204) load[0m
+[0;32mI (296) esp_image: segment 3: paddr=000a0020 vaddr=400d0020 size=31adch (203484) map[0m
+[0;32mI (371) esp_image: segment 4: paddr=000d1b04 vaddr=3ffb1454 size=01110h (  4368) load[0m
+[0;32mI (373) esp_image: segment 5: paddr=000d2c1c vaddr=40080000 size=0f3f0h ( 62448) load[0m
+[0;32mI (406) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (406) boot: Disabling RNG early entropy source...[0m
+[0;32mI (417) cpu_start: Multicore app[0m
+[0;32mI (425) cpu_start: Pro cpu start user code[0m
+[0;32mI (425) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (425) app_init: Application information:[0m
+[0;32mI (425) app_init: Project name:     BAND_BOX[0m
+[0;32mI (429) app_init: App version:      c6aaab8-dirty[0m
+[0;32mI (434) app_init: Compile time:     May 20 2025 14:39:27[0m
+[0;32mI (439) app_init: ELF file SHA256:  272b14da9...[0m
+[0;32mI (443) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (447) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (451) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (455) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (459) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (465) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (470) heap_init: At 3FFB3140 len 0002CEC0 (179 KiB): DRAM[0m
+[0;32mI (476) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (481) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (486) heap_init: At 4008F3F0 len 00010C10 (67 KiB): IRAM[0m
+[0;32mI (493) spi_flash: detected chip: gd[0m
+[0;32mI (495) spi_flash: flash io: dio[0m
+[0;33mW (498) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (506) main_task: Started on CPU0[0m
+[0;32mI (516) main_task: Calling app_main()[0m
+[0;32mI (516) PLAY_FLASH_MP3_CONTROL: [ 1 ] Start audio codec chip[0m
+[0;33mW (516) i2c_bus_v2: I2C master handle is NULL, will create new one[0m
+[1;31mE (516) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (526) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (526) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (576) PLAY_FLASH_MP3_CONTROL: [ 2 ] Create audio pipeline, add all elements to pipeline, and subscribe pipeline event[0m
+[0;32mI (576) PLAY_FLASH_MP3_CONTROL: [2.1] Create mp3 decoder to decode mp3 file and set custom read callback[0m
+[0;32mI (576) PLAY_FLASH_MP3_CONTROL: [2.2] Create i2s stream to write data to codec chip[0m
+[0;32mI (586) PLAY_FLASH_MP3_CONTROL: [2.3] Register all elements to audio pipeline[0m
+[0;32mI (596) PLAY_FLASH_MP3_CONTROL: [2.4] Link it together [mp3_music_read_cb]-->mp3_decoder-->i2s_stream-->[codec_chip][0m
+[0;32mI (606) PLAY_FLASH_MP3_CONTROL: [ 3 ] Initialize peripherals[0m
+[0;32mI (606) PLAY_FLASH_MP3_CONTROL: [3.1] Initialize keys on board[0m
+[0;32mI (616) PLAY_FLASH_MP3_CONTROL: [ 4 ] Set up  event listener[0m
+[0;32mI (616) PLAY_FLASH_MP3_CONTROL: [4.1] Listening event from all elements of pipeline[0m
+[0;32mI (626) PLAY_FLASH_MP3_CONTROL: [4.2] Listening event from peripherals[0m
+[0;33mW (636) PLAY_FLASH_MP3_CONTROL: [ 5 ] Tap touch buttons to control music player:[0m
+[0;33mW (646) PLAY_FLASH_MP3_CONTROL:       [Play] to start, pause and resume, [Set] to stop.[0m
+[0;33mW (646) PLAY_FLASH_MP3_CONTROL:       [Vol-] or [Vol+] to adjust volume.[0m
+[0;32mI (656) PLAY_FLASH_MP3_CONTROL: [ 5.1 ] Start audio_pipeline[0m
+[0;33mW (666) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;32mI (686) PLAY_FLASH_MP3_CONTROL: [ * ] Receive music info from mp3 decoder, sample_rates=8000, bits=16, ch=2[0m
+[0;32mI (6556) PLAY_FLASH_MP3_CONTROL: [ * ] [mode] tap event[0m
+[0;33mW (6556) AUDIO_ELEMENT: OUT-[mp3] AEL_IO_ABORT[0m
+[0;33mW (6556) MP3_DECODER: Output aborted, -3[0m
+[0;33mW (6656) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;32mI (6666) PLAY_FLASH_MP3_CONTROL: [ * ] Receive music info from mp3 decoder, sample_rates=22050, bits=16, ch=2[0m
+[0;32mI (7696) PLAY_FLASH_MP3_CONTROL: [ * ] [mode] tap event[0m
+[0;33mW (7696) AUDIO_ELEMENT: OUT-[mp3] AEL_IO_ABORT[0m
+[0;33mW (7696) MP3_DECODER: Output aborted, -3[0m
+[0;33mW (7716) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;32mI (7736) PLAY_FLASH_MP3_CONTROL: [ * ] Receive music info from mp3 decoder, sample_rates=44100, bits=16, ch=2[0m
+[0;33mW (7756) ADC_BTN: Old ID:4, New ID:5, Cnt:4[0m
+[0;33mW (10156) ADC_BTN: Old ID:5, New ID:0, Cnt:0[0m
+[0;32mI (10216) PLAY_FLASH_MP3_CONTROL: [ * ] [Vol+] touch tap event[0m
+[0;32mI (10216) PLAY_FLASH_MP3_CONTROL: [ * ] Volume set to 80 %[0m
+[0;32mI (10576) PLAY_FLASH_MP3_CONTROL: [ * ] [Vol+] touch tap event[0m
+[0;32mI (10576) PLAY_FLASH_MP3_CONTROL: [ * ] Volume set to 90 %[0m
+[0;32mI (10756) PLAY_FLASH_MP3_CONTROL: [ * ] [Vol+] touch tap event[0m
+[0;32mI (10756) PLAY_FLASH_MP3_CONTROL: [ * ] Volume set to 100 %[0m
+[0;32mI (16796) PLAY_FLASH_MP3_CONTROL: [ * ] [Play] touch tap event[0m
+[0;32mI (16796) PLAY_FLASH_MP3_CONTROL: [ * ] Pausing audio pipeline[0m
+[0;32mI (17496) PLAY_FLASH_MP3_CONTROL: [ * ] [Play] touch tap event[0m
+[0;32mI (17496) PLAY_FLASH_MP3_CONTROL: [ * ] Resuming audio pipeline[0m
+[0;32mI (17496) PLAY_FLASH_MP3_CONTROL: [ * ] Receive music info from mp3 decoder, sample_rates=44100, bits=16, ch=2[0m
+[0;33mW (17656) ADC_BTN: Old ID:3, New ID:5, Cnt:9[0m
+[0;33mW (19516) ADC_BTN: Old ID:5, New ID:3, Cnt:0[0m
+[0;32mI (19576) PLAY_FLASH_MP3_CONTROL: [ * ] [Play] touch tap event[0m
+[0;32mI (19576) PLAY_FLASH_MP3_CONTROL: [ * ] Pausing audio pipeline[0m
+[0;32mI (21896) PLAY_FLASH_MP3_CONTROL: [ * ] [Play] touch tap event[0m
+[0;32mI (21896) PLAY_FLASH_MP3_CONTROL: [ * ] Resuming audio pipeline[0m
+[0;32mI (21906) PLAY_FLASH_MP3_CONTROL: [ * ] Receive music info from mp3 decoder, sample_rates=44100, bits=16, ch=2[0m
+[0;32mI (22976) PLAY_FLASH_MP3_CONTROL: [ * ] [Play] touch tap event[0m
+[0;32mI (22976) PLAY_FLASH_MP3_CONTROL: [ * ] Pausing audio pipeline[0m
+[0;32mI (23436) PLAY_FLASH_MP3_CONTROL: [ * ] [Play] touch tap event[0m
+[0;32mI (23436) PLAY_FLASH_MP3_CONTROL: [ * ] Resuming audio pipeline[0m
+[0;32mI (23446) PLAY_FLASH_MP3_CONTROL: [ * ] Receive music info from mp3 decoder, sample_rates=44100, bits=16, ch=2[0m
+[0;32mI (27296) PLAY_FLASH_MP3_CONTROL: [ * ] [Play] touch tap event[0m
+[0;32mI (27296) PLAY_FLASH_MP3_CONTROL: [ * ] Pausing audio pipeline[0m
+[0;32mI (28336) PLAY_FLASH_MP3_CONTROL: [ * ] [Play] touch tap event[0m
+[0;32mI (28336) PLAY_FLASH_MP3_CONTROL: [ * ] Resuming audio pipeline[0m
+[0;32mI (28346) PLAY_FLASH_MP3_CONTROL: [ * ] Receive music info from mp3 decoder, sample_rates=44100, bits=16, ch=2[0m
+[0;33mW (28416) ADC_BTN: Old ID:3, New ID:5, Cnt:5[0m
+[0;33mW (29596) ADC_BTN: Old ID:5, New ID:3, Cnt:0[0m
+[0;32mI (29656) PLAY_FLASH_MP3_CONTROL: [ * ] [Play] touch tap event[0m
+[0;32mI (29656) PLAY_FLASH_MP3_CONTROL: [ * ] Rewinding audio pipeline[0m
+[0;32mI (29666) PLAY_FLASH_MP3_CONTROL: [ * ] Receive music info from mp3 decoder, sample_rates=8000, bits=16, ch=2[0m
+[0;32mI (31396) PLAY_FLASH_MP3_CONTROL: [ * ] [mode] tap event[0m
+[0;33mW (31396) AUDIO_ELEMENT: OUT-[mp3] AEL_IO_ABORT[0m
+[0;33mW (31396) MP3_DECODER: Output aborted, -3[0m
+[0;33mW (31396) AUDIO_ELEMENT: IN-[i2s] AEL_IO_ABORT[0m
+[0;33mW (31396) AUDIO_ELEMENT: [i2s] Element already stopped[0m
+[0;33mW (31406) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;32mI (31426) PLAY_FLASH_MP3_CONTROL: [ * ] Receive music info from mp3 decoder, sample_rates=22050, bits=16, ch=2[0m
+[0;33mW (31476) ADC_BTN: Old ID:4, New ID:5, Cnt:5[0m
+[0;33mW (32456) ADC_BTN: Old ID:5, New ID:4, Cnt:0[0m
+[0;32mI (32516) PLAY_FLASH_MP3_CONTROL: [ * ] [mode] tap event[0m
+[0;33mW (32516) AUDIO_ELEMENT: OUT-[mp3] AEL_IO_ABORT[0m
+[0;33mW (32516) MP3_DECODER: Output aborted, -3[0m
+[0;33mW (32546) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;32mI (32566) PLAY_FLASH_MP3_CONTROL: [ * ] Receive music info from mp3 decoder, sample_rates=44100, bits=16, ch=2[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 20 2025 14:36:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 8MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=8eb78h (584568) map[0m
+[0;32mI (290) esp_image: segment 1: paddr=0009eba0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (290) esp_image: segment 2: paddr=0009ebc4 vaddr=3ffb0000 size=01454h (  5204) load[0m
+[0;32mI (296) esp_image: segment 3: paddr=000a0020 vaddr=400d0020 size=31adch (203484) map[0m
+[0;32mI (371) esp_image: segment 4: paddr=000d1b04 vaddr=3ffb1454 size=01110h (  4368) load[0m
+[0;32mI (373) esp_image: segment 5: paddr=000d2c1c vaddr=40080000 size=0f3f0h ( 62448) load[0m
+[0;32mI (406) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (406) boot: Disabling RNG early entropy source...[0m
+[0;32mI (417) cpu_start: Multicore app[0m
+[0;32mI (425) cpu_start: Pro cpu start user code[0m
+[0;32mI (425) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (425) app_init: Application information:[0m
+[0;32mI (425) app_init: Project name:     BAND_BOX[0m
+[0;32mI (429) app_init: App version:      c6aaab8-dirty[0m
+[0;32mI (434) app_init: Compile time:     May 20 2025 14:39:27[0m
+[0;32mI (439) app_init: ELF file SHA256:  272b14da9...[0m
+[0;32mI (443) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (447) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (451) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (455) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (459) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (465) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (470) heap_init: At 3FFB3140 len 0002CEC0 (179 KiB): DRAM[0m
+[0;32mI (476) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (481) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (486) heap_init: At 4008F3F0 len 00010C10 (67 KiB): IRAM[0m
+[0;32mI (493) spi_flash: detected chip: gd[0m
+[0;32mI (495) spi_flash: flash io: dio[0m
+[0;33mW (498) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (506) main_task: Started on CPU0[0m
+[0;32mI (516) main_task: Calling app_main()[0m
+[0;32mI (516) PLAY_FLASH_MP3_CONTROL: [ 1 ] Start audio codec chip[0m
+[0;33mW (516) i2c_bus_v2: I2C master handle is NULL, will create new one[0m
+[1;31mE (516) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (526) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (526) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (556) AUDIO_BOARD: board.c:93 (audio_board_adc_init): Got NULL Pointer[0m
+[0;32mI (566) PLAY_FLASH_MP3_CONTROL: [ 2 ] Create audio pipeline, add all elements to pipeline, and subscribe pipeline event[0m
+[0;32mI (566) PLAY_FLASH_MP3_CONTROL: [2.1] Create mp3 decoder to decode mp3 file and set custom read callback[0m
+[0;32mI (576) PLAY_FLASH_MP3_CONTROL: [2.2] Create i2s stream to write data to codec chip[0m
+[0;32mI (586) PLAY_FLASH_MP3_CONTROL: [2.3] Register all elements to audio pipeline[0m
+[0;32mI (596) PLAY_FLASH_MP3_CONTROL: [2.4] Link it together [mp3_music_read_cb]-->mp3_decoder-->i2s_stream-->[codec_chip][0m
+[0;32mI (606) PLAY_FLASH_MP3_CONTROL: [ 3 ] Initialize peripherals[0m
+[0;32mI (606) PLAY_FLASH_MP3_CONTROL: [3.1] Initialize keys on board[0m
+[0;32mI (616) PLAY_FLASH_MP3_CONTROL: [ 4 ] Set up  event listener[0m
+[0;32mI (616) PLAY_FLASH_MP3_CONTROL: [4.1] Listening event from all elements of pipeline[0m
+[0;32mI (626) PLAY_FLASH_MP3_CONTROL: [4.2] Listening event from peripherals[0m
+[0;33mW (636) PLAY_FLASH_MP3_CONTROL: [ 5 ] Tap touch buttons to control music player:[0m
+[0;33mW (636) PLAY_FLASH_MP3_CONTROL:       [Play] to start, pause and resume, [Set] to stop.[0m
+[0;33mW (646) PLAY_FLASH_MP3_CONTROL:       [Vol-] or [Vol+] to adjust volume.[0m
+[0;32mI (656) PLAY_FLASH_MP3_CONTROL: [ 5.1 ] Start audio_pipeline[0m
+[0;33mW (656) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;32mI (686) PLAY_FLASH_MP3_CONTROL: [ * ] Receive music info from mp3 decoder, sample_rates=8000, bits=16, ch=2[0m
