@@ -18,9 +18,6 @@ if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "")
   "flasher_args.json"
   "ldgen_libraries"
   "ldgen_libraries.in"
-  "music-16b-2c-22050hz.mp3.S"
-  "music-16b-2c-44100hz.mp3.S"
-  "music-16b-2c-8000hz.mp3.S"
   "project_elf_src_esp32.c"
   "x509_crt_bundle.S"
   )

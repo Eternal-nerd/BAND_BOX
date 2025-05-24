@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "BAND_BOX",
-    "project_version":    "c6aaab8-dirty",
+    "project_version":    "6ff4018-dirty",
     "project_path":       "C:/Users/myles/Projects/BAND_BOX/application",
     "idf_path":           "C:/Users/myles/esp/esp-idf",
     "build_dir":          "C:/Users/myles/Projects/BAND_BOX/application/build",
@@ -1585,7 +1585,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "C:/Users/myles/Projects/BAND_BOX/application/build/esp-idf/main/libmain.a",
-            "sources": [ "C:/Users/myles/Projects/BAND_BOX/application/main/main.c", "C:/Users/myles/Projects/BAND_BOX/application/build/music-16b-2c-8000hz.mp3.S", "C:/Users/myles/Projects/BAND_BOX/application/build/music-16b-2c-22050hz.mp3.S", "C:/Users/myles/Projects/BAND_BOX/application/build/music-16b-2c-44100hz.mp3.S" ],
+            "sources": [ "C:/Users/myles/Projects/BAND_BOX/application/main/main.c" ],
             "include_dirs": []
         },
         "mbedtls": {

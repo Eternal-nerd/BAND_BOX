@@ -1,0 +1,236 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 23 2025 09:34:56[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 8MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e388h (123784) map[0m
+[0;32mI (133) esp_image: segment 1: paddr=0002e3b0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (133) esp_image: segment 2: paddr=0002e3d4 vaddr=3ffb0000 size=01c44h (  7236) load[0m
+[0;32mI (139) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=4b690h (308880) map[0m
+[0;32mI (249) esp_image: segment 4: paddr=0007b6b8 vaddr=3ffb1c44 size=00ba0h (  2976) load[0m
+[0;32mI (251) esp_image: segment 5: paddr=0007c260 vaddr=40080000 size=11138h ( 69944) load[0m
+[0;32mI (289) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (289) boot: Disabling RNG early entropy source...[0m
+[0;32mI (299) cpu_start: Multicore app[0m
+[0;32mI (307) cpu_start: Pro cpu start user code[0m
+[0;32mI (307) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (308) app_init: Application information:[0m
+[0;32mI (308) app_init: Project name:     BAND_BOX[0m
+[0;32mI (312) app_init: App version:      6ff4018-dirty[0m
+[0;32mI (316) app_init: Compile time:     May 23 2025 11:09:04[0m
+[0;32mI (321) app_init: ELF file SHA256:  c66fad981...[0m
+[0;32mI (325) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (330) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (333) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (337) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (341) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (348) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (353) heap_init: At 3FFB3490 len 0002CB70 (178 KiB): DRAM[0m
+[0;32mI (358) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (363) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (369) heap_init: At 40091138 len 0000EEC8 (59 KiB): IRAM[0m
+[0;32mI (375) spi_flash: detected chip: gd[0m
+[0;32mI (377) spi_flash: flash io: dio[0m
+[0;33mW (380) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (388) main_task: Started on CPU0[0m
+[0;32mI (398) main_task: Calling app_main()[0m
+[0;32mI (398) SDCARD_MP3_CONTROL_EXAMPLE: [1.0] Initialize peripherals management[0m
+[0;32mI (398) SDCARD_MP3_CONTROL_EXAMPLE: [1.1] Initialize and start peripherals[0m
+[0;32mI (908) SDCARD_MP3_CONTROL_EXAMPLE: [1.2] Set up a sdcard playlist and scan sdcard music save to it[0m
+[0;32mI (988) SDCARD_MP3_CONTROL_EXAMPLE: [ 2 ] Start codec chip[0m
+[0;33mW (988) i2c_bus_v2: I2C master handle is NULL, will create new one[0m
+[0;32mI (1018) SDCARD_MP3_CONTROL_EXAMPLE: [ 3 ] Create and start input key service[0m
+[0;32mI (1028) SDCARD_MP3_CONTROL_EXAMPLE: [4.0] Create audio pipeline for playback[0m
+[0;32mI (1028) SDCARD_MP3_CONTROL_EXAMPLE: [4.1] Create i2s stream to write data to codec chip[0m
+[0;32mI (1038) SDCARD_MP3_CONTROL_EXAMPLE: [4.2] Create mp3 decoder to decode mp3 file[0m
+[0;32mI (1038) SDCARD_MP3_CONTROL_EXAMPLE: [4.3] Create resample filter[0m
+[0;32mI (1048) SDCARD_MP3_CONTROL_EXAMPLE: [4.4] Create fatfs stream to read data from sdcard[0m
+[0;32mI (1058) SDCARD_MP3_CONTROL_EXAMPLE: [4.5] Register all elements to audio pipeline[0m
+[0;32mI (1058) SDCARD_MP3_CONTROL_EXAMPLE: [4.6] Link it together [sdcard]-->fatfs_stream-->mp3_decoder-->resample-->i2s_stream-->[codec_chip][0m
+[0;32mI (1078) SDCARD_MP3_CONTROL_EXAMPLE: [5.0] Set up  event listener[0m
+[0;32mI (1078) SDCARD_MP3_CONTROL_EXAMPLE: [5.1] Listen for all pipeline events[0m
+[0;33mW (1088) SDCARD_MP3_CONTROL_EXAMPLE: [ 6 ] Press the keys to control music player:[0m
+[0;33mW (1098) SDCARD_MP3_CONTROL_EXAMPLE:       [Play] to start, pause and resume, [Set] next song.[0m
+[0;33mW (1098) SDCARD_MP3_CONTROL_EXAMPLE:       [Vol-] or [Vol+] to adjust volume.[0m
+[0;32mI (15728) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 3[0m
+[0;32mI (15728) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Play] input key event[0m
+[0;32mI (15728) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Starting audio pipeline[0m
+[0;33mW (15728) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;33mW (15748) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;32mI (15878) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Received music info from mp3 decoder, sample_rates=44100, bits=16, ch=2[0m
+[0;32mI (17268) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 6[0m
+[0;32mI (17268) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Vol+] input key event[0m
+[0;32mI (17268) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Volume set to 80 %[0m
+[0;32mI (17728) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 6[0m
+[0;32mI (17728) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Vol+] input key event[0m
+[0;32mI (17728) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Volume set to 90 %[0m
+[0;32mI (18008) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 6[0m
+[0;32mI (18008) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Vol+] input key event[0m
+[0;32mI (18008) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Volume set to 100 %[0m
+[0;32mI (23988) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 2[0m
+[0;32mI (23988) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Set] input key event[0m
+[0;32mI (23988) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Stopped, advancing to the next song[0m
+[0;33mW (23988) AUDIO_ELEMENT: OUT-[mp3] AEL_IO_ABORT[0m
+[0;33mW (23998) MP3_DECODER: Output aborted, -3[0m
+[0;33mW (23998) AUDIO_ELEMENT: OUT-[filter] AEL_IO_ABORT[0m
+[0;33mW (23988) AUDIO_ELEMENT: OUT-[file] AEL_IO_ABORT[0m
+[0;33mW (24008) SDCARD_MP3_CONTROL_EXAMPLE: URL: file://sdcard/Tame Impala - The Less I Know the Better (Official Audio).mp3[0m
+[0;33mW (24018) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;33mW (24028) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;32mI (24158) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Received music info from mp3 decoder, sample_rates=44100, bits=16, ch=2[0m
+[0;32mI (26428) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 5[0m
+[0;32mI (26428) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Vol-] input key event[0m
+[0;32mI (26428) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Volume set to 90 %[0m
+[0;32mI (27148) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 5[0m
+[0;32mI (27148) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Vol-] input key event[0m
+[0;32mI (27148) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Volume set to 80 %[0m
+[0;32mI (27388) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 5[0m
+[0;32mI (27388) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Vol-] input key event[0m
+[0;32mI (27388) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Volume set to 70 %[0m
+[0;32mI (27588) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 5[0m
+[0;32mI (27588) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Vol-] input key event[0m
+[0;32mI (27588) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Volume set to 60 %[0m
+[0;32mI (28268) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 2[0m
+[0;32mI (28268) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Set] input key event[0m
+[0;32mI (28268) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Stopped, advancing to the next song[0m
+[0;33mW (28268) AUDIO_ELEMENT: OUT-[mp3] AEL_IO_ABORT[0m
+[0;33mW (28278) MP3_DECODER: Output aborted, -3[0m
+[0;33mW (28278) AUDIO_ELEMENT: OUT-[filter] AEL_IO_ABORT[0m
+[0;33mW (28288) AUDIO_ELEMENT: OUT-[file] AEL_IO_ABORT[0m
+[0;33mW (28288) SDCARD_MP3_CONTROL_EXAMPLE: URL: file://sdcard/Mother.mp3[0m
+[0;33mW (28298) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;33mW (28308) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;32mI (28438) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Received music info from mp3 decoder, sample_rates=44100, bits=16, ch=2[0m
+[0;32mI (28728) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 6[0m
+[0;32mI (28728) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Vol+] input key event[0m
+[0;32mI (28728) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Volume set to 70 %[0m
+[0;32mI (29908) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 6[0m
+[0;32mI (29908) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Vol+] input key event[0m
+[0;32mI (29908) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Volume set to 80 %[0m
+[0;33mW (36708) ADC_BTN: Old ID:3, New ID:2, Cnt:0[0m
+[0;32mI (36848) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 2[0m
+[0;32mI (36848) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Set] input key event[0m
+[0;32mI (36848) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Stopped, advancing to the next song[0m
+[0;33mW (36848) AUDIO_ELEMENT: OUT-[mp3] AEL_IO_ABORT[0m
+[0;33mW (36858) MP3_DECODER: Output aborted, -3[0m
+[0;33mW (36858) AUDIO_ELEMENT: OUT-[filter] AEL_IO_ABORT[0m
+[0;33mW (36868) AUDIO_ELEMENT: OUT-[file] AEL_IO_ABORT[0m
+[0;33mW (36868) SDCARD_MP3_CONTROL_EXAMPLE: URL: file://sdcard/MGMT  Little Dark Age.mp3[0m
+[0;33mW (36878) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;33mW (36888) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;32mI (37018) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Received music info from mp3 decoder, sample_rates=44100, bits=16, ch=2[0m
+[0;32mI (42248) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 2[0m
+[0;32mI (42248) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Set] input key event[0m
+[0;32mI (42248) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Stopped, advancing to the next song[0m
+[0;33mW (42258) AUDIO_ELEMENT: OUT-[filter] AEL_IO_ABORT[0m
+[0;33mW (42258) AUDIO_ELEMENT: OUT-[mp3] AEL_IO_ABORT[0m
+[0;33mW (42258) MP3_DECODER: Output aborted, -3[0m
+[0;33mW (42268) AUDIO_ELEMENT: OUT-[file] AEL_IO_ABORT[0m
+[0;33mW (42268) SDCARD_MP3_CONTROL_EXAMPLE: URL: file://sdcard/Cream  Sunshine Of Your Love HD.mp3[0m
+[0;33mW (42278) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;33mW (42288) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;32mI (42428) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Received music info from mp3 decoder, sample_rates=44100, bits=16, ch=2[0m
+[0;32mI (50008) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 2[0m
+[0;32mI (50008) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Set] input key event[0m
+[0;32mI (50008) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Stopped, advancing to the next song[0m
+[0;33mW (50018) AUDIO_ELEMENT: OUT-[mp3] AEL_IO_ABORT[0m
+[0;33mW (50018) MP3_DECODER: Output aborted, -3[0m
+[0;33mW (50018) AUDIO_ELEMENT: OUT-[file] AEL_IO_ABORT[0m
+[0;33mW (50028) SDCARD_MP3_CONTROL_EXAMPLE: URL: file://sdcard/Walking On A Dream.mp3[0m
+[0;33mW (50028) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;33mW (50048) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;32mI (50188) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Received music info from mp3 decoder, sample_rates=44100, bits=16, ch=2[0m
+[0;32mI (53008) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 2[0m
+[0;32mI (53008) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Set] input key event[0m
+[0;32mI (53008) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Stopped, advancing to the next song[0m
+[0;33mW (53008) AUDIO_ELEMENT: IN-[i2s] AEL_IO_ABORT[0m
+[0;33mW (53018) AUDIO_ELEMENT: OUT-[mp3] AEL_IO_ABORT[0m
+[0;33mW (53018) MP3_DECODER: Output aborted, -3[0m
+[0;33mW (53028) AUDIO_ELEMENT: OUT-[file] AEL_IO_ABORT[0m
+[0;33mW (53028) SDCARD_MP3_CONTROL_EXAMPLE: URL: file://sdcard/jealous.mp3[0m
+[0;33mW (53038) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;33mW (53048) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;32mI (53188) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Received music info from mp3 decoder, sample_rates=44100, bits=16, ch=2[0m
+[0;32mI (54248) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 2[0m
+[0;32mI (54248) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Set] input key event[0m
+[0;32mI (54248) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Stopped, advancing to the next song[0m
+[0;33mW (54248) AUDIO_ELEMENT: OUT-[mp3] AEL_IO_ABORT[0m
+[0;33mW (54258) MP3_DECODER: Output aborted, -3[0m
+[0;33mW (54258) AUDIO_ELEMENT: OUT-[filter] AEL_IO_ABORT[0m
+[0;33mW (54268) AUDIO_ELEMENT: OUT-[file] AEL_IO_ABORT[0m
+[0;33mW (54268) SDCARD_MP3_CONTROL_EXAMPLE: URL: file://sdcard/Metronomy - The Look.mp3[0m
+[0;33mW (54278) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;33mW (54288) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;32mI (54418) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Received music info from mp3 decoder, sample_rates=44100, bits=16, ch=2[0m
+[0;32mI (55308) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 2[0m
+[0;32mI (55308) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Set] input key event[0m
+[0;32mI (55308) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Stopped, advancing to the next song[0m
+[0;33mW (55318) AUDIO_ELEMENT: OUT-[filter] AEL_IO_ABORT[0m
+[0;33mW (55318) AUDIO_ELEMENT: OUT-[mp3] AEL_IO_ABORT[0m
+[0;33mW (55318) MP3_DECODER: Output aborted, -3[0m
+[0;33mW (55328) AUDIO_ELEMENT: OUT-[file] AEL_IO_ABORT[0m
+[0;33mW (55328) SDCARD_MP3_CONTROL_EXAMPLE: URL: file://sdcard/Tame Impala - The Less I Know the Better (Official Audio).mp3[0m
+[0;33mW (55338) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;33mW (55348) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;32mI (55478) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Received music info from mp3 decoder, sample_rates=44100, bits=16, ch=2[0m
+[0;32mI (56588) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 2[0m
+[0;32mI (56588) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Set] input key event[0m
+[0;32mI (56588) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Stopped, advancing to the next song[0m
+[0;33mW (56588) AUDIO_ELEMENT: OUT-[mp3] AEL_IO_ABORT[0m
+[0;33mW (56598) MP3_DECODER: Output aborted, -3[0m
+[0;33mW (56598) AUDIO_ELEMENT: OUT-[filter] AEL_IO_ABORT[0m
+[0;33mW (56608) AUDIO_ELEMENT: OUT-[file] AEL_IO_ABORT[0m
+[0;33mW (56608) SDCARD_MP3_CONTROL_EXAMPLE: URL: file://sdcard/Mother.mp3[0m
+[0;33mW (56618) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;33mW (56628) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;32mI (56758) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Received music info from mp3 decoder, sample_rates=44100, bits=16, ch=2[0m
+[0;32mI (57668) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 2[0m
+[0;32mI (57668) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Set] input key event[0m
+[0;32mI (57668) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Stopped, advancing to the next song[0m
+[0;33mW (57668) AUDIO_ELEMENT: OUT-[mp3] AEL_IO_ABORT[0m
+[0;33mW (57678) MP3_DECODER: Output aborted, -3[0m
+[0;33mW (57678) AUDIO_ELEMENT: OUT-[filter] AEL_IO_ABORT[0m
+[0;33mW (57688) AUDIO_ELEMENT: OUT-[file] AEL_IO_ABORT[0m
+[0;33mW (57688) SDCARD_MP3_CONTROL_EXAMPLE: URL: file://sdcard/MGMT  Little Dark Age.mp3[0m
+[0;33mW (57698) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;33mW (57708) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;32mI (57838) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Received music info from mp3 decoder, sample_rates=44100, bits=16, ch=2[0m
+[0;32mI (60308) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 3[0m
+[0;32mI (60308) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Play] input key event[0m
+[0;32mI (60308) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Pausing audio pipeline[0m
+[0;32mI (61328) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 3[0m
+[0;32mI (61328) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Play] input key event[0m
+[0;32mI (61328) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Resuming audio pipeline[0m
+[0;32mI (61448) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Received music info from mp3 decoder, sample_rates=44100, bits=16, ch=2[0m
+[0;32mI (62448) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 6[0m
+[0;32mI (62448) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Vol+] input key event[0m
+[0;32mI (62448) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Volume set to 90 %[0m
+[0;32mI (62628) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 6[0m
+[0;32mI (62628) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Vol+] input key event[0m
+[0;32mI (62628) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Volume set to 100 %[0m
+[0;32mI (64548) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 3[0m
+[0;32mI (64548) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Play] input key event[0m
+[0;32mI (64548) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Pausing audio pipeline[0m

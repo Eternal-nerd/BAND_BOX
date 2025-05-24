@@ -1,0 +1,93 @@
+:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH�I (13) boot: ESP-IDF v5.4-dirty 2nd stage bootloader
+[0;32mI (13) boot: compile time May 23 2025 09:34:56[0m
+[0;32mI (13) boot: Multicore bootloader[0m
+[0;32mI (14) boot: chip revision: v3.1[0m
+[0;32mI (17) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (20) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (24) boot.esp32: SPI Flash Size : 8MB[0m
+[0;32mI (28) boot: Enabling RNG early entropy source...[0m
+[0;32mI (32) boot: Partition Table:[0m
+[0;32mI (35) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (41) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (48) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (54) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (61) boot: End of partition table[0m
+[0;32mI (64) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e388h (123784) map[0m
+[0;32mI (114) esp_image: segment 1: paddr=0002e3b0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=0002e3d4 vaddr=3ffb0000 size=01c44h (  7236) load[0m
+[0;32mI (120) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=4b690h (308880) map[0m
+[0;32mI (231) esp_image: segment 4: paddr=0007b6b8 vaddr=3ffb1c44 size=00ba0h (  2976) load[0m
+[0;32mI (232) esp_image: segment 5: paddr=0007c260 vaddr=40080000 size=11138h ( 69944) load[0m
+[0;32mI (270) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (270) boot: Disabling RNG early entropy source...[0m
+[0;32mI (280) cpu_start: Multicore app[0m
+[0;32mI (289) cpu_start: Pro cpu start user code[0m
+[0;32mI (289) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (289) app_init: Application information:[0m
+[0;32mI (289) app_init: Project name:     BAND_BOX[0m
+[0;32mI (293) app_init: App version:      6ff4018-dirty[0m
+[0;32mI (297) app_init: Compile time:     May 23 2025 11:09:04[0m
+[0;32mI (302) app_init: ELF file SHA256:  88b32b6f6...[0m
+[0;32mI (307) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (311) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (315) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (318) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (323) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (329) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (334) heap_init: At 3FFB3490 len 0002CB70 (178 KiB): DRAM[0m
+[0;32mI (339) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (344) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (350) heap_init: At 40091138 len 0000EEC8 (59 KiB): IRAM[0m
+[0;32mI (357) spi_flash: detected chip: gd[0m
+[0;32mI (358) spi_flash: flash io: dio[0m
+[0;33mW (361) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (369) main_task: Started on CPU0[0m
+[0;32mI (379) main_task: Calling app_main()[0m
+[0;32mI (379) SDCARD_MP3_CONTROL_EXAMPLE: [1.0] Initialize peripherals management[0m
+[0;32mI (379) SDCARD_MP3_CONTROL_EXAMPLE: [1.1] Initialize and start peripherals[0m
+[0;32mI (889) SDCARD_MP3_CONTROL_EXAMPLE: [1.2] Set up a sdcard playlist and scan sdcard music save to it[0m
+[0;32mI (969) SDCARD_MP3_CONTROL_EXAMPLE: [ 2 ] Start codec chip[0m
+[0;33mW (969) i2c_bus_v2: I2C master handle is NULL, will create new one[0m
+[0;32mI (999) SDCARD_MP3_CONTROL_EXAMPLE: [ 3 ] Create and start input key service[0m
+[0;32mI (999) SDCARD_MP3_CONTROL_EXAMPLE: [4.0] Create audio pipeline for playback[0m
+[0;32mI (1009) SDCARD_MP3_CONTROL_EXAMPLE: [4.1] Create i2s stream to write data to codec chip[0m
+[0;32mI (1019) SDCARD_MP3_CONTROL_EXAMPLE: [4.2] Create mp3 decoder to decode mp3 file[0m
+[0;32mI (1019) SDCARD_MP3_CONTROL_EXAMPLE: [4.3] Create resample filter[0m
+[0;32mI (1029) SDCARD_MP3_CONTROL_EXAMPLE: [4.4] Create fatfs stream to read data from sdcard[0m
+[0;32mI (1039) SDCARD_MP3_CONTROL_EXAMPLE: [4.5] Register all elements to audio pipeline[0m
+[0;32mI (1039) SDCARD_MP3_CONTROL_EXAMPLE: [4.6] Link it together [sdcard]-->fatfs_stream-->mp3_decoder-->resample-->i2s_stream-->[codec_chip][0m
+[0;32mI (1059) SDCARD_MP3_CONTROL_EXAMPLE: [5.0] Set up  event listener[0m
+[0;32mI (1059) SDCARD_MP3_CONTROL_EXAMPLE: [5.1] Listen for all pipeline events[0m
+[0;33mW (1069) SDCARD_MP3_CONTROL_EXAMPLE: [ 6 ] Press the keys to control music player:[0m
+[0;33mW (1069) SDCARD_MP3_CONTROL_EXAMPLE:       [Play] to start, pause and resume, [Set] next song.[0m
+[0;33mW (1079) SDCARD_MP3_CONTROL_EXAMPLE:       [Vol-] or [Vol+] to adjust volume.[0m
+[0;32mI (5209) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 3[0m
+[0;32mI (5209) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Play] input key event[0m
+[0;32mI (5209) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Starting audio pipeline[0m
+[0;33mW (5209) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;33mW (5219) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;32mI (5359) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Received music info from mp3 decoder, sample_rates=44100, bits=16, ch=2[0m
+[0;32mI (6349) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 5[0m
+[0;32mI (6349) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Vol-] input key event[0m
+[0;32mI (6349) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Volume set to 60 %[0m
+[0;32mI (6809) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 5[0m
+[0;32mI (6809) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Vol-] input key event[0m
+[0;32mI (6809) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Volume set to 50 %[0m
+[0;32mI (7589) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 6[0m
+[0;32mI (7589) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Vol+] input key event[0m
+[0;32mI (7589) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Volume set to 60 %[0m
+[0;32mI (7789) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 6[0m
+[0;32mI (7789) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Vol+] input key event[0m
+[0;32mI (7789) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Volume set to 70 %[0m
+[0;32mI (7969) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 6[0m
+[0;32mI (7969) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Vol+] input key event[0m
+[0;32mI (7969) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Volume set to 80 %[0m
+[0;32mI (8149) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 6[0m
+[0;32mI (8149) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Vol+] input key event[0m
+[0;32mI (8149) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Volume set to 90 %[0m
+[0;32mI (8469) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 6[0m
+[0;32mI (8469) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Vol+] input key event[0m
+[0;32mI (8469) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Volume set to 100 %[0m
+[0;32mI (31729) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] input key id is 3[0m
+[0;32mI (31729) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] [Play] input key event[0m
+[0;32mI (31729) SDCARD_MP3_CONTROL_EXAMPLE: [ * ] Pausing audio pipeline[0m
