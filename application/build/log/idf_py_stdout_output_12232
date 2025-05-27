@@ -1,0 +1,87 @@
+[0;32mI (13) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (13) boot: compile time May 23 2025 09:34:56[0m
+[0;32mI (13) boot: Multicore bootloader[0m
+[0;32mI (14) boot: chip revision: v3.1[0m
+[0;32mI (17) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (20) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (24) boot.esp32: SPI Flash Size : 8MB[0m
+[0;32mI (28) boot: Enabling RNG early entropy source...[0m
+[0;32mI (32) boot: Partition Table:[0m
+[0;32mI (35) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (41) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (48) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (54) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (61) boot: End of partition table[0m
+[0;32mI (64) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0fe40h ( 65088) map[0m
+[0;32mI (94) esp_image: segment 1: paddr=0001fe68 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (94) esp_image: segment 2: paddr=0001fe8c vaddr=3ffb0000 size=0018ch (   396) load[0m
+[0;32mI (98) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=26b74h (158580) map[0m
+[0;32mI (159) esp_image: segment 4: paddr=00046b9c vaddr=3ffb018c size=023d8h (  9176) load[0m
+[0;32mI (163) esp_image: segment 5: paddr=00048f7c vaddr=40080000 size=0ec18h ( 60440) load[0m
+[0;32mI (193) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (193) boot: Disabling RNG early entropy source...[0m
+[0;32mI (204) cpu_start: Multicore app[0m
+[0;32mI (212) cpu_start: Pro cpu start user code[0m
+[0;32mI (212) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (212) app_init: Application information:[0m
+[0;32mI (212) app_init: Project name:     BAND_BOX[0m
+[0;32mI (216) app_init: App version:      428ccef-dirty[0m
+[0;32mI (221) app_init: Compile time:     May 27 2025 10:20:28[0m
+[0;32mI (226) app_init: ELF file SHA256:  3f232a6d5...[0m
+[0;32mI (230) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (234) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (238) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (252) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (257) heap_init: At 3FFB3130 len 0002CED0 (179 KiB): DRAM[0m
+[0;32mI (263) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (268) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (274) heap_init: At 4008EC18 len 000113E8 (68 KiB): IRAM[0m
+[0;32mI (280) spi_flash: detected chip: gd[0m
+[0;32mI (282) spi_flash: flash io: dio[0m
+[0;33mW (285) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (293) main_task: Started on CPU0[0m
+[0;32mI (303) main_task: Calling app_main()[0m
+[0;32mI (303) BAND_BOX: app_main function invocation[0m
+[0;32mI (303) BAND_BOX: start codec chip[0m
+[0;33mW (303) i2c_bus_v2: I2C master handle is NULL, will create new one[0m
+[0;32mI (343) BAND_BOX: create audio pipeline for recording/playback[0m
+[0;32mI (343) BAND_BOX: create i2s stream to read audio data from codec chip[0m
+[0;32mI (343) BAND_BOX: create audio encoder to handle data[0m
+[0;32mI (343) BAND_BOX: create wav decoder to decode wav data[0m
+[0;32mI (353) BAND_BOX: create i2s stream to write data to codec chip[0m
+[0;32mI (363) BAND_BOX: register all elements to audio pipeline[0m
+[0;32mI (363) BAND_BOX: link it together [codec_chip]-->i2s_stream-->wav_encoder-->wav_decoder-->resample-->i2s_stream-->[codec_chip][0m
+[0;32mI (373) BAND_BOX: set up  event listener[0m
+[0;32mI (373) BAND_BOX: listening event from pipeline[0m
+[0;32mI (383) BAND_BOX: start audio_pipeline[0m
+[0;33mW (383) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;33mW (393) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;32mI (413) BAND_BOX: passthrough audio for all pipeline events, record for 30 Seconds[0m
+[0;32mI (413) BAND_BOX: 0 seconds passed. [0m
+[0;31mE (593) WAV_HEAD: This is not wav stream.[0m
+[1;31mE (603) AUDIO_ELEMENT: [wav_decode] AEL_STATUS_ERROR_OPEN,-1[0m
+[0;33mW (603) AUDIO_ELEMENT: [wav_decode] audio_element_on_cmd_error,7[0m
+[0;33mW (603) AUDIO_ELEMENT: IN-[i2s_write] AEL_IO_ABORT[0m
+[0;33mW (833) AUDIO_ELEMENT: OUT-[wav_encode] AEL_IO_ABORT[0m
+[0;32mI (1423) BAND_BOX: 1 seconds passed. [0m
+[0;32mI (2423) BAND_BOX: 2 seconds passed. [0m
+[0;32mI (3423) BAND_BOX: 3 seconds passed. [0m
+[0;32mI (4423) BAND_BOX: 4 seconds passed. [0m
+[0;32mI (5423) BAND_BOX: 5 seconds passed. [0m
+[0;32mI (6423) BAND_BOX: 6 seconds passed. [0m
+[0;32mI (7423) BAND_BOX: 7 seconds passed. [0m
+[0;32mI (8423) BAND_BOX: 8 seconds passed. [0m
+[0;32mI (9423) BAND_BOX: 9 seconds passed. [0m
+[0;32mI (10423) BAND_BOX: 10 seconds passed. [0m
+[0;32mI (11423) BAND_BOX: 11 seconds passed. [0m
+[0;32mI (12423) BAND_BOX: 12 seconds passed. [0m
+[0;32mI (13423) BAND_BOX: 13 seconds passed. [0m
+[0;32mI (14423) BAND_BOX: 14 seconds passed. [0m
+[0;32mI (15423) BAND_BOX: 15 seconds passed. [0m
+[0;32mI (16423) BAND_BOX: 16 seconds passed. [0m
+[0;32mI (17423) BAND_BOX: 17 seconds passed. [0m
+[0;32mI (18423) BAND_BOX: 18 seconds passed. [0m
+[0;32mI (19423) BAND_BOX: 19 seconds passed. [0m
+[0;32mI (20423) BAND_BOX: 20 seconds passed. [0m
