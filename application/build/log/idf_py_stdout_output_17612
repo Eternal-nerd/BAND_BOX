@@ -1,0 +1,49 @@
+[0;32mI (13) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (13) boot: compile time May 23 2025 09:34:56[0m
+[0;32mI (13) boot: Multicore bootloader[0m
+[0;32mI (14) boot: chip revision: v3.1[0m
+[0;32mI (17) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (21) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (24) boot.esp32: SPI Flash Size : 8MB[0m
+[0;32mI (28) boot: Enabling RNG early entropy source...[0m
+[0;32mI (32) boot: Partition Table:[0m
+[0;32mI (35) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (41) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (48) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (54) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (61) boot: End of partition table[0m
+[0;32mI (64) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bed4h ( 48852) map[0m
+[0;32mI (88) esp_image: segment 1: paddr=0001befc vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (88) esp_image: segment 2: paddr=0001bf20 vaddr=3ffb0000 size=024c4h (  9412) load[0m
+[0;32mI (95) esp_image: segment 3: paddr=0001e3ec vaddr=40080000 size=01c2ch (  7212) load[0m
+[0;32mI (102) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=1b59ch (112028) map[0m
+[0;32mI (145) esp_image: segment 5: paddr=0003b5c4 vaddr=40081c2c size=0c56ch ( 50540) load[0m
+[0;32mI (172) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (172) boot: Disabling RNG early entropy source...[0m
+[0;32mI (182) cpu_start: Multicore app[0m
+[0;32mI (191) cpu_start: Pro cpu start user code[0m
+[0;32mI (191) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (191) app_init: Application information:[0m
+[0;32mI (191) app_init: Project name:     BAND_BOX[0m
+[0;32mI (195) app_init: App version:      a95105c-dirty[0m
+[0;32mI (199) app_init: Compile time:     May 26 2025 12:13:59[0m
+[0;32mI (204) app_init: ELF file SHA256:  bc7f8bcb0...[0m
+[0;32mI (208) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (213) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (216) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (220) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (225) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (231) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (236) heap_init: At 3FFB2F00 len 0002D100 (180 KiB): DRAM[0m
+[0;32mI (241) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (246) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (252) heap_init: At 4008E198 len 00011E68 (71 KiB): IRAM[0m
+[0;32mI (258) spi_flash: detected chip: gd[0m
+[0;32mI (260) spi_flash: flash io: dio[0m
+[0;32mI (264) main_task: Started on CPU0[0m
+[0;32mI (274) main_task: Calling app_main()[0m
+[0;32mI (274) BAND_BOX: app_main function invocation[0m
+[0;32mI (274) BAND_BOX: create audio pipeline for recording[0m
+[0;32mI (274) BAND_BOX: create i2s stream to read audio data from codec chip[0m
+[0;33mW (284) BAND_BOX: here[0m
+[0;33mW (284) BAND_BOX: here[0m

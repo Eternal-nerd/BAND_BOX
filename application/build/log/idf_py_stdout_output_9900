@@ -1,0 +1,45 @@
+[0;32mI (13) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (13) boot: compile time May 23 2025 09:34:56[0m
+[0;32mI (13) boot: Multicore bootloader[0m
+[0;32mI (14) boot: chip revision: v3.1[0m
+[0;32mI (17) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (20) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (24) boot.esp32: SPI Flash Size : 8MB[0m
+[0;32mI (28) boot: Enabling RNG early entropy source...[0m
+[0;32mI (32) boot: Partition Table:[0m
+[0;32mI (35) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (41) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (48) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (54) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (61) boot: End of partition table[0m
+[0;32mI (64) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=097f0h ( 38896) map[0m
+[0;32mI (85) esp_image: segment 1: paddr=00019818 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (85) esp_image: segment 2: paddr=0001983c vaddr=3ffb0000 size=023ech (  9196) load[0m
+[0;32mI (92) esp_image: segment 3: paddr=0001bc30 vaddr=40080000 size=043e8h ( 17384) load[0m
+[0;32mI (103) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=13604h ( 79364) map[0m
+[0;32mI (131) esp_image: segment 5: paddr=0003362c vaddr=400843e8 size=08fe8h ( 36840) load[0m
+[0;32mI (151) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (152) boot: Disabling RNG early entropy source...[0m
+[0;32mI (162) cpu_start: Multicore app[0m
+[0;32mI (170) cpu_start: Pro cpu start user code[0m
+[0;32mI (170) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (170) app_init: Application information:[0m
+[0;32mI (170) app_init: Project name:     BAND_BOX[0m
+[0;32mI (174) app_init: App version:      a95105c-dirty[0m
+[0;32mI (179) app_init: Compile time:     May 26 2025 12:13:59[0m
+[0;32mI (184) app_init: ELF file SHA256:  fda975b7c...[0m
+[0;32mI (188) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (192) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (196) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (200) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (204) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (210) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (215) heap_init: At 3FFB2CA8 len 0002D358 (180 KiB): DRAM[0m
+[0;32mI (221) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (226) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (232) heap_init: At 4008D3D0 len 00012C30 (75 KiB): IRAM[0m
+[0;32mI (238) spi_flash: detected chip: gd[0m
+[0;32mI (240) spi_flash: flash io: dio[0m
+[0;32mI (244) main_task: Started on CPU0[0m
+[0;32mI (254) main_task: Calling app_main()[0m
+[0;32mI (254) BAND_BOX: app_main function invocation.  is this thing on? [0m
